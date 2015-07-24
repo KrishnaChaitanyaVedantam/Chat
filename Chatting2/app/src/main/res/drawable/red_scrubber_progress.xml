@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/red_scrubber_track_holo_light">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp"/>
+
+            <gradient
+                android:angle="270"
+                android:endColor="#00996a"
+                android:startColor="#00d190"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <scale
+            android:drawable="@drawable/red_scrubber_secondary_holo"
+            android:scaleWidth="100%" />
+
+    </item>
+    <item android:id="@android:id/progress">
+        <scale
+            android:drawable="@drawable/red_scrubber_primary_holo"
+            android:scaleWidth="100%" />
+    </item>
+
+</layer-list>

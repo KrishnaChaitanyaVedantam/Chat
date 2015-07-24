@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+    <Button android:id="@+id/btnFeedback" android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/snap_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:layout_margin="10dp"
+        android:progressDrawable="@drawable/red_scrubber_progress"
+        android:secondaryProgress="0"
+        android:thumb="@drawable/red_scrubber_control"
+        android:layout_below="@id/btnFeedback" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:max="100"
+        android:layout_below="@id/snap_bar"
+        style="@style/CustomSeekBar"
+        android:layout_margin="5dip" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="Teexx"/>
+
+</RelativeLayout>
