@@ -25,12 +25,6 @@
         android:layout_below="@id/snap_bar"
         style="@style/CustomSeekBar"
         android:layout_margin="5dip" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
-        android:text="Teexx"/>
+    
 
 </RelativeLayout>
